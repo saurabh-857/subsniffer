@@ -1,11 +1,13 @@
 [package]
 name = "subsniffer"
 version = "0.2.0"
+
 authors = ["Saurabh <saurabh-857>"]
 license = "MIT"
 description = "A lightweight tool for enumerating subdomains using DNS resolution"
 keywords = ["subdomain", "dns", "rust"]
 categories = ["command-line-utilities", "network-programming"]
+
 edition = "2024"
 repository = "https://github.com/saurabh-857/subsniffer"
 readme = "README.md"
@@ -14,9 +16,6 @@ readme = "README.md"
 clap = { version = "4.5", features = ["derive"] }
 tokio = { version = "1.45", features = ["full"] }
 trust-dns-resolver = { version = "0.20", features = ["dns-over-rustls"] }
-thiserror = "1"
-async-trait = "0.1"
-
 
 [package.metadata.deb]
 maintainer = "Saurabh <saurabh-857>"
